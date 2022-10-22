@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry Hunters</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <nav>
+        <div class="logo">
+            <h4>Hungry Hunters</h4>
+        </div>
+    
+        <ul>
+            <li><a href="index.html" id="nav1">Home</a></li>
+            <li><a href="product.html" id="nav2">Product</a></li>
+            <li><a href="about.html" id="nav3">About</a></li>
+            <li><a href="contact.html" id="nav4">Contact</a></li>
+        </ul>
+    
+        <div class="menu-toggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="wrapper" id="wrapper">
+            <div class="card">
+                <div class="product" id="product1" onclick="getDetail(1)">
+                    <img src="assets/american.jpg" alt=""/>
+                </div>
+                <div class="detail">
+                    <div class="title">CLASSIC AMERICAN
+                        <br>PANCAKE</div>
+                    <div class="description">Most Common Pancake</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="product" id="product2" onclick="getDetail(2)">
+                    <img src="assets/souffle.jpg" alt=""/>
+                </div>
+                <div class="detail">
+                    <div class="title">JAPAN SOUFFLE
+                        <br>PANCAKE</div>
+                    <div class="description">Thick Pancake With Soft Texture</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="product" id="product3" onclick="getDetail(3)">
+                    <img src="assets/poland.jpg" alt=""/>
+                </div>
+                <div class="detail">
+                    <div class="title">POLAND POTATO
+                        <br>PANCAKE</div>
+                    <div class="description">Potato-Based Pancake</div>
+                </div>
+            </div>
+            </div>
+
+            <div class="newBox" id="newBox">
+                <div class="productBox" id="productBox1" onclick="back(1)">
+                        <img src="assets/american.jpg" alt="/">
+                        <div class="titleBox">CLASSIC AMERICAN PANCAKE</div>
+                        <div class="descriptionBox">Most Common Pancake
+                            <br>$99
+                        </div>
+                </div>
+                <div class="productBox" id="productBox2" onclick="back(2)">
+                    <img src="assets/souffle.jpg" alt="/">
+                        <div class="titleBox">JAPAN SOUFFLE PANCAKE</div>
+                        <div class="descriptionBox">Thick Pancake With Soft Texture
+                            <br>$99
+                        </div>
+                </div>
+                <div class="productBox" id="productBox3" onclick="back(3)">
+                    <img src="assets/poland.jpg" alt="/">
+                        <div class="titleBox">POLAND POTATO PANCAKE</div>
+                        <div class="descriptionBox">Potato-Based Pancake
+                            <br>$99
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        
+</body>
+<script src="tweak.js"></script>
+</html>
