@@ -3,12 +3,18 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 body {
     background-color: wheat;
     overflow-x: hidden;
     overflow-y: scroll;
+}
+
+.body-product {
+    background-color: gray;
 }
 
 nav {
@@ -163,6 +169,15 @@ nav ul li a {
     background-color: gray;
 }
 
+.welcome {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-align: center;
+    color: #f7f7f7;
+    padding: 20px;
+}
+
 .wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -266,12 +281,50 @@ nav ul li a {
 }
 
 .descriptionBox {
-    margin-bottom: 100px;
+    margin-bottom: 15px;
     font-size: 24px;
     font-weight: 400;
     text-align: center;
     color: white;
 }
+
+.btn {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    padding: 13px;
+    border: none;
+    background-size: 300% 100%;
+    text-decoration: none;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    margin-bottom: 40px;
+}
+
+.btn:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn {
+    background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+}
+
 
 /* Contact */
 .contact1 {
@@ -338,7 +391,7 @@ nav ul li a {
         display: flex;
         z-index: 11;
     }
-
+    
     nav {
         justify-content: space-around;
     }
@@ -354,11 +407,11 @@ nav ul li a {
         align-items: center;
         background-color: white;
         z-index: 10;
-        transform: translateX(100%);
-        -webkit-transform: translateX(100%);
-        -moz-transform: translateX(100%);
-        -ms-transform: translateX(100%);
-        -o-transform: translateX(100%);
+        transform: translatey(-100%);
+        -webkit-transform: translatey(-100%);
+        -moz-transform: translatey(-100%);
+        -ms-transform: translatey(-100%);
+        -o-transform: translatey(-100%);
         transition: all 1s;
         -webkit-transition: all 1s;
         -moz-transition: all 1s;
